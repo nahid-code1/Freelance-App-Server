@@ -37,7 +37,7 @@ async function run() {
             res.send(result)
         })
 
-        // for latest jobs--------------------------------------
+        // for latest jobs---------------------------------------
         app.get('/latestJobs', async (req, res) => {
             const cursor = jobsCollection
                 .find()
